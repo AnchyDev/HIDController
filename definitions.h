@@ -2,6 +2,7 @@
 #define DEFINITIONS_h
 
 #define uint unsigned int
+#define uint32 uint32_t
 
   enum PROGMEM PINS : uint
   {

@@ -2,12 +2,12 @@
 
 void Controller::HandlePots()
 {
-  uint32_t analog_0 = analogRead(ANALOG_0);
-  uint32_t analog_1 = analogRead(ANALOG_1);
-  uint32_t analog_2 = analogRead(ANALOG_2);
-  uint32_t analog_3 = analogRead(ANALOG_3);
-  uint32_t analog_4 = analogRead(ANALOG_4);
-  uint32_t analog_5 = analogRead(ANALOG_5);
+  uint32 analog_0 = analogRead(ANALOG_0);
+  uint32 analog_1 = analogRead(ANALOG_1);
+  uint32 analog_2 = analogRead(ANALOG_2);
+  uint32 analog_3 = analogRead(ANALOG_3);
+  uint32 analog_4 = analogRead(ANALOG_4);
+  uint32 analog_5 = analogRead(ANALOG_5);
 
   //set (analog_#); for 10k  /  (analog_# / 64); for 50k
   joystick.setRzAxis(analog_0 / 64);
